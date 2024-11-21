@@ -1,3 +1,5 @@
+-- Dataset Used: https://www.kaggle.com/datasets/pschale/mlb-pitch-data-20152018
+
 SELECT first_name || ' ' ||last_name as full_name, avg(spin_rate) 
 From player_names 
 join atbats 
