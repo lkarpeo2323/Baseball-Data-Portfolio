@@ -22,5 +22,5 @@ describeBy(curve[c("HorzBreak","VertBreak", "RelSpeed")], group = curve$Pitcher)
 
 
 
-#------------#the mean velocity of EACH Pitcher
-aggregate(data$Pitcher ~ data$AutoPitchType, data = data, mean) 
+#------------#the mean velocity of ALL pitches for EACH Pitcher
+aggregate(data$RelSpeed~data$Pitcher, data = data, mean) 
