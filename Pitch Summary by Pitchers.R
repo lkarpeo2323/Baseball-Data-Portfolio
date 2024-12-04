@@ -19,3 +19,8 @@ curve = data[data$AutoPitchType=="Curveball", ]
 # -------(Horizontal Break, Vertical Break, and Release Speed) of slider Summary by Pitcher-------
 
 describeBy(curve[c("HorzBreak","VertBreak", "RelSpeed")], group = curve$Pitcher)
+
+
+
+#------------#the mean velocity of EACH Pitcher
+aggregate(data$Pitcher ~ data$AutoPitchType, data = data, mean) 
